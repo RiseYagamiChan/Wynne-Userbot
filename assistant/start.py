@@ -36,7 +36,7 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**By Kynan Join @KynanSupport**
+**By Kynan Join @WynneSupports**
 """
 
 _settings = [
@@ -132,7 +132,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(ayra_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@kynansupport**"
+        msg += "\n\n• Powered by **@WynneSupports**"
     await event.edit(
         msg,
         buttons=[Button.inline("Tutup", data="closeit")],
@@ -174,9 +174,9 @@ async def ayra(event):
             await get_stored_file(event, args)
         if not udB.get_key("STARTMSG"):
             if udB.get_key("PMBOT"):
-                ok = "Anda dapat menghubungi Owner saya menggunakan bot ini!!\n\nKirim Pesan Anda, saya akan Kirim ke Owner."
+                ok = "Anda dapat menghubungi Owner saya menggunakan bot ini!!\n\nKirim Pesan Anda, maka saya akan Kirim ke Owner."
             await event.reply(
-                f"Hey {mention}, Aku Adalah Ayra Asissten {me}!\n\n{ok}",
+                f"Hey {mention}, Aku Adalah Wynne Asissten {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
                 buttons=[Button.inline("Info.", data="ownerinfo")]
                 if Owner_info_msg
@@ -223,7 +223,7 @@ async def ayra(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(get_all_users("BOT_USERS"))
-    msg = """Naya-Userbot Assistant - Stats
+    msg = """Wynne-Userbot Assistant - Stats
 Total Users - {}""".format(
         ok,
     )
