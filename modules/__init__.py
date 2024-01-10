@@ -154,8 +154,10 @@ KANGING_STR = [
     "Plagiat hehe...",
     "Ijin bre comot stiker ini ke paket saya...",
     "Boleh juga nih...",
-    "Keren juga nih...",
-    "Lah apaan tuh...",
+    "Keren juga ni stiker...",
+    "Aseekk dapet stiker baru xixixi...",
+    "Wahh.. leh ugha...",
+    "Anjay keren juga nih",
 ]
 
 ATRA_COL = [
